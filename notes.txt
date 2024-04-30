@@ -1,0 +1,2 @@
+string1: abcdefghij
+string2: cdgi
