@@ -34,13 +34,10 @@ if(s1[i]==s2[j]){
         lcsp.F=i;
         lcsp.S=j;
         mx=max(memo[i][j],mx);
-
-
-    }
+}
     else{
         memo[i][j]=max(memo[i-1][j],memo[i][j-1]);
-
-    }
+}
         }
 
     }
@@ -57,8 +54,7 @@ if(s1[i]==s2[j]){
         else{
             if(memo[r-1][c]>memo[r][c-1]){
                 r=r-1;
-                
-            }
+                }
             else{
                 c=c-1;
             }
